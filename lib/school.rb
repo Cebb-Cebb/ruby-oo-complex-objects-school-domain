@@ -26,7 +26,7 @@ class School
    end
 
    def sort
-    @grade.sort.to_h
+    @roster.sort.to_h
     # @roster.sort {|a ,b| a<=>b  }.to_h
    end 
 
