@@ -26,7 +26,18 @@ class School
    end
 
    def sort
-    @roster.sort.to_h
+    sort_array_hash = {}
+    # binding.pry
+    roster.each do |grade, students|
+        sort_array_hash[grade] = students.sort
+        # binding.pry
+        
+    
+    end
+    
+    sort_array_hash
+    # binding.pry 
+    
     # @roster.sort {|a ,b| a<=>b  }.to_h
    end 
 
